@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 # Set up ssh to localhost
 ssh-keygen
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
