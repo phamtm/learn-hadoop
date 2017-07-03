@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+bash --login
+
 # Set up ssh to localhost
 ssh-keygen
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
@@ -13,7 +15,7 @@ tar xzf hadoop-2.8.0.tar.gz
 echo "export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64" >> ~/.bashrc
 echo "export HADOOP_HOME=/home/hadoop/hadoop-2.8.0" >> ~/.bashrc
 echo "export PATH=\$PATH:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin" >> ~/.bashrc
-source ~/.bashrc
+. ~/.bashrc
 
 
 # Copy config
